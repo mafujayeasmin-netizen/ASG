@@ -1,0 +1,79 @@
+body {
+    overflow: hidden;
+}
+
+.ball {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    animation: bounce 2s linear infinite alternate;
+    position: absolute;
+}
+
+.green {
+    height: 50px;
+    width: 200px;
+    background: green;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+.red {
+    height: 50px;
+    width: 200px;
+    background: red;
+    position: absolute;
+    top: 0px;
+    left: 400px;
+}
+
+.blue {
+    height: 50px;
+    width: 200px;
+    background: blue;
+    position: absolute;
+    top: 500px;
+    left: 700px;
+}
+
+.yellow {
+    height: 50px;
+    width: 200px;
+    background: yellow;
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+        top: 100px;
+        left: 250px;
+    }
+
+    50% {
+        top: 50px;
+        left: 450px;
+    }
+
+    75% {
+        top: 400px;
+        left: 750px;
+    }
+    85% {
+        top: 150px;
+        left: 1050px;
+    }
+
+    100% {
+        top: 100%;
+        left: 100%;
+    }
+}
